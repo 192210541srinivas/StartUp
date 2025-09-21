@@ -1,0 +1,64 @@
+.main-content {
+  margin-top: 9vh; /* offset for fixed navbar */
+  padding: 2rem;
+  text-align: center;
+}
+.app-b {
+background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 91vh;
+  background: linear-gradient(to bottom, #FAF3E0, #F5EBDD);
+
+}
+
+.logo-1 {
+  width: 150px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-1 {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-1 {
+    width: 150px;
+  }
+}
+
+.tit{
+  font-family: 'Great Vibes', cursive;
+  margin: 0%;
+  font-size: clamp(60px, 6vw, 150px);
+  color: rgba(27, 87, 93);
+}
+
+.slogan{
+  font-size: clamp(22px, 2vw, 30px);
+  font-family: 'Playfair Display', serif;
+
+
+
+}
+
+.know-1{
+  border-radius: 6px;
+  padding:5px 10px;
+  background-color: rgba(27, 87, 93);
+  color:#FAF3E0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 2vh;
+}
+
+.know-1:hover{
+  background-color: rgb(21, 77, 84);
+}
+
+.know-1:active{
+  background-color: rgb(10, 51, 56);
+}
