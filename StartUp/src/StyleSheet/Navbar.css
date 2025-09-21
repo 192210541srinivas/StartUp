@@ -1,0 +1,32 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  height: 9vh;
+  background-color: rgba(27, 87, 93);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  padding-left: 1rem;
+  height: auto;
+  width: clamp(175px, 4vw, 19px);
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  font-size: clamp(16px, 2.5vw, 19px);
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}

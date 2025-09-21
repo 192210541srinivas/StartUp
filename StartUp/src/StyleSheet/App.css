@@ -1,0 +1,13 @@
+.main-content {
+  margin-top: 9vh; /* offset for fixed navbar */
+  padding: 2rem;
+  text-align: center;
+}
+.app-b {
+background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+

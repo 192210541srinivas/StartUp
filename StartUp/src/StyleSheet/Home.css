@@ -1,0 +1,36 @@
+.title{
+    display: flex;
+    margin-top:9vh;
+    justify-content: center;
+    height: 71vh;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.name{
+    margin: 0%;
+    font-size: clamp(24px, 6vw, 50px);
+
+}
+
+.slogan{
+    margin: 10px 0 16px 0;
+    font-size: clamp(15px, 4vw, 25px);
+}
+
+.know {
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.know:hover {
+  background-color: rgb(164, 162, 162);
+}
+
+.know:active {
+  background-color: rgb(74, 74, 74);
+  color: white;
+}
