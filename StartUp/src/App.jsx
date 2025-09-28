@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import Landing from './Pages/Landing'; // 👈 Import this
+import Landing from './Pages/Landing';
 
 function App() {
   return (

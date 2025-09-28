@@ -1,36 +1,90 @@
-.title{
-    display: flex;
-    margin-top:9vh;
-    justify-content: center;
-    height: 71vh;
-    align-items: center;
+.front{
     text-align: center;
-    flex-direction: column;
-    
+    margin: 9vh auto;
+    width: 50vw;
+    padding: 20vh 0;
+    align-items: center;
+    justify-content: center;
+    height: 48vh;
 }
-.name{
+
+.we{
+    font-size: clamp(30px,5vw,50px);
     margin: 0%;
-    font-size: clamp(24px, 6vw, 50px);
-
 }
 
-.slogan{
-    margin: 10px 0 16px 0;
-    font-size: clamp(15px, 4vw, 25px);
+.hh{
+    width: clamp(50px,3vw,50px);
+    height: auto;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
 }
 
-.know {
+.name{
+    font-size: clamp(50px,8vw,80px);
+    margin: 0%;
+}
+
+.pa {
+  font-size: clamp(25px, 2vw, 40px);
+  margin-top: 1rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.abtus{
+    border: 0;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Playfair Display',serif;
+}
+
+.abtus:hover{
+  .hh{
+    transform: scale(1.1);
+  }
+}
+
+.info {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1rem;
+  margin: 2rem ;
+}
+
+.overview {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+.overview > div {
+  min-width: 150px;
+  height: 100px;
+  background-color: #FAF3E0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
-  padding: 5px 10px;
-  font-size: 1rem;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #3B2F2F;
+  transition: transform 0.3s ease;
 }
 
-.know:hover {
-  background-color: rgb(164, 162, 162);
+.o1:hover, .o2:hover, .o3:hover, .o4:hover, .o5:hover{
+    transform: scale(1.05);
 }
 
-.know:active {
-  background-color: rgb(74, 74, 74);
-  color: white;
+@media (max-width: 768px) {
+    .home{
+        margin: 0;
+        width: 100%;
+    }
+  .front {
+    width: 90vw;
+    margin: 12vh auto;
+    padding: 10vh 0;
+  }
 }

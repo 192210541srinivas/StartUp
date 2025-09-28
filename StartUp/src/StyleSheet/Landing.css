@@ -1,7 +1,9 @@
 .main-content {
-  margin-top: 9vh; /* offset for fixed navbar */
+  margin-top: 9vh;
   padding: 2rem;
   text-align: center;
+  height: 80vh;
+  padding-bottom: 0%;
 }
 .app-b {
 background-image: url("");
@@ -9,13 +11,24 @@ background-image: url("");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 91vh;
-  background: linear-gradient(to bottom, #FAF3E0, #F5EBDD);
-
+  margin-top: 9vh;
 }
 
 .logo-1 {
   width: 150px;
   height: auto;
+  transition: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -56,9 +69,9 @@ background-image: url("");
 }
 
 .know-1:hover{
-  background-color: rgb(21, 77, 84);
+  background-color: rgb(14, 48, 51);
 }
 
 .know-1:active{
-  background-color: rgb(10, 51, 56);
+  background-color:rgba(27, 87, 93);;
 }

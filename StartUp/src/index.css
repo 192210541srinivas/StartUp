@@ -6,4 +6,15 @@
 body,html{
   margin: 0;
   user-select: none;
+    background: linear-gradient(to bottom, #FAF3E0, #F5EBDD);
 }
+
+html, body {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+

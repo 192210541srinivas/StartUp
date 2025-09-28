@@ -2,40 +2,84 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  height: 9vh;
+  height:62.568px;
   background-color: rgba(27, 87, 93);
   color: white;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .logo {
   padding-left: 1rem;
   height: auto;
-  width: clamp(173px, 4vw, 19px);
+  width: clamp(150px, 5vw, 25px);
   align-items: center;
   justify-content: center;
 }
 
 .nav-links {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content:center;
   list-style: none;
   font-size: clamp(16px, 2.5vw, 19px);
+  margin: 1.28px 0 0 0;
+  margin-bottom: 0;
+  height: 94%;
+
 }
 
 .nav-links a {
-  color: white;
+  color: #FAF3E0;
   text-decoration: none;
+  margin: 0;
+  padding: 0 1vw 1rem 1vw;
+  height: 100%;
 }
 
 li{
+  width: auto;
   transition: 0.2s ease-out;
+  margin: 0;
+  padding: 1rem 0.5rem;
+  border-radius: 6px 6px 0px 0px;
+  margin: 0;
 }
 
 li:hover{
-  transform: translateY(-5px);
-;
+  background-color: rgb(14, 48, 51);
+}
+
+li:active{
+  background-color: rgba(27, 87, 93);
+}
+
+@media (max-width: 768px) {
+  li:hover {
+    transform: none;
+    cursor: default;
+  }
+
+  li:active{
+    background-color:transparent;
+  }
+
+  .navbar a:active{
+    background-color:transparent;
+
+  }
+
+  .navbar a:hover{
+    background-color:transparent;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .li:hover {
+    transform: translateY(0px);
+  }
+
 }
