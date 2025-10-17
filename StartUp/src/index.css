@@ -6,6 +6,7 @@
 body,html{
   margin: 0;
   user-select: none;
+  -webkit-user-drag: none;
     background: linear-gradient(to bottom, #FAF3E0, #F5EBDD);
 }
 
@@ -18,3 +19,10 @@ body::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
 
+img{
+  -webkit-user-drag: none;
+}
+
+a{
+  -webkit-user-drag: none;
+}

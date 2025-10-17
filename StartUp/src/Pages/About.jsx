@@ -1,7 +1,27 @@
+import React, { useState } from "react";
 import "../StyleSheet/About.css"
+
 export default function About() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  function Toggle() {
+    setIsSidebarOpen(!isSidebarOpen);
+  }
+
+
   return(
     <div className="title">
+      <div className="contact1" onClick={Toggle}><img src="/Resources/Images/icon-removebg-preview.png"></img>
+            {isSidebarOpen && (
+
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+
+        )}
+      </div>
       <div className="author">
         <div className="photo-2">
           <img src="/Resources/Images/person.png" className="Ph-2"></img>
